@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+
+    <title>coffee order</title>
+
+    <style>
+
+        .wrap {
+            margin: auto;
+            background-color: white;
+            display: grid;
+            grid-template-rows: 100px 900px 100px;
+
+
+        }
+
+        .header {
+
+            height: 100px;
+            width: 850px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 40px 80px 1fr;
+        }
+
+        .container {
+            height: 900px;
+            width: auto;
+            display: grid;
+            margin: auto;
+            grid-template-columns: 400px 400px;
+
+        }
+
+        .order-img {
+
+            height: 900px;
+
+
+
+        }
+
+        .order {
+
+            height: 900px;
+
+
+        }
+
+        .footer {
+            margin: auto;
+            height: 200px;
+            width: 800px;
+            display: inline-block;
+
+
+        }
+
+        .ctg {
+            background-color: purple;
+            width: auto;
+
+
+            background-image: url("category.PNG");
+            background-position: center;
+            background-size: cover;
+
+            padding-top: 50px;
+
+
+
+        }
+
+        .coffee {
+            margin-top: 60px;
+            margin-left: 55px;
+        }
+
+        .updown {
+            border: 1px solid black;
+            width: 1px;
+            height: 10px;
+            display: inline-block;
+
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+<div class="wrap">
+    <div class='header'>
+
+        <div style="font-size: small" class='ctg'>카테고리</div>
+        <div class="logo">
+            <img src="https://image7.coupangcdn.com/image/coupang/common/logo_coupang_w350.png" width="80" height="40">
+        </div>
+        <div class="input-group mb-3" style="height: 40px">
+            <button class="btn btn-outline-secondary" type="button" id="button-addon1">전체</button>
+            <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon"
+                   aria-describedby="button-addon1">
+            <img height="60px" width="130" src="my_coupang.PNG">
+
+        </div>
+
+    </div>
+    <div class="container">
+
+        <div class="order-img">
+            <img src="https://thumbnail9.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/533813270906379-2cf20810-0dd2-4ee3-8c61-7e3e38db7651.jpg"
+                 style="height: 450px" width="300" class="coffee">;
+
+        </div>
+        <div class='order'>
+            <p style="font-size: small; color: blue">프렌치카페</p>
+            <h5>프렌치카페 로스터리 에스프레소 라테</h5>
+            <hr>
+            <span style="font-size: large; color: brown">10160원 </span>
+            <span style="font-size: small; color: brown">(100ml당 406원)</span>
+            <img height="20px" width="60px"
+                 src="https://image10.coupangcdn.com/image/mobile_app/v3/brandsdp/loyalty/pc/rocketwowBi16@2x.png">
+            <hr>
+            <p style="font-size: small; margin-bottom: 5px">고객님도 <span style="background-color: green; color: white">로켓은 무조건 무료 배송</span>
+            </p>
+            <span style="color: green">오늘(월)</span><span style="font-size: small">도착 보장(오전 10시 전 주문 시/서울경기 기준)</span>
+            <br><br>
+            <button style="color: blue; font-size: small">다른 판매자 보기</button>
+            <br><br>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" style="padding-right: 250px;
+                background-color: lightgray; color: #333333" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    개당 용량 X 총 수량
+                    <br>250ml X 10개
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">20개</a>
+                    <a class="dropdown-item" href="#">30개</a>
+                    <a class="dropdown-item" href="#">40개</a>
+                </div>
+                <hr>
+                캐시적립 혜택
+                <div class="updown"></div>
+                최대 200원 적립
+                <div style="background-color: lightgray; padding: 20px">쿠페이머니 결제 시 1% 적립<br>
+                    <button style="color: blue; border-color: blue; background-color: honeydew; padding: 5px">
+                        쿠페이 머니 충전하기
+                    </button>
+                </div>
+                <!-- Default dropup button -->
+                <hr>
+                <div>
+                    <div class="btn-group dropup">
+                        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false" style="padding: 15px; background-color: white; color: #333333">
+                            1
+                        </button>
+                        <button style="margin-left:10px; padding-right: 20px; padding-left: 20px;  background-color: white; color: blue; border-color: blue">
+                            장바구니 담기
+                        </button>
+                        <button style="margin-left:10px; padding-right: 20px; padding-left: 20px; background-color: blue; color: white">
+                            바로구매
+                            >
+                        </button>
+                    </div>
+
+                    <div style="font-size: small">
+                        <p>
+                        <ul>
+                            <li> 원산지: 상품 상세설명 참조</li>
+                            <li>유통기한: 2021-06-04 이후인 상품</li>
+                            <li>개당 중량: 250g</li>
+                            <li>열량: 158Kcal</li>
+                            <li>용기 타입: 플라스틱병</li>
+                            <li>쿠팡상품번호: 24677757 - 95983620</li>
+
+                        </ul>
+                    </div>
+                    </p>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="card-group">
+            <div class="card">
+                <img class="card-img-top"
+                     src="https://thumbnail8.coupangcdn.com/thumbnails/remote/300x300ex/image/retail/images/532657834783962-6140c4cc-1cfe-492e-adc6-b6a91b47a970.jpg"
+                     alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text" style="font-size: 7px">
+                        프렌치카페 로스터리 옐로우 버번 돌체 라떼, 250ml, 10개
+                    </p>
+                    <p class="card-text"><span style="color: brown">10120원</span>
+                        <br><span style="color: brown;font-size: 10px">(100ml당 405원)</span></p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top"
+                     src="https://thumbnail8.coupangcdn.com/thumbnails/remote/300x300ex/image/retail/images/532657834783962-6140c4cc-1cfe-492e-adc6-b6a91b47a970.jpg"
+                     alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text" style="font-size: 7px">
+                        프렌치카페 로스터리 옐로우 버번 돌체 라떼, 250ml, 10개
+                    </p>
+                    <p class="card-text"><span style="color: brown">10120원</span>
+                        <br><span style="color: brown;font-size: 10px">(100ml당 405원)</span></p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top"
+                     src="https://thumbnail8.coupangcdn.com/thumbnails/remote/300x300ex/image/retail/images/532657834783962-6140c4cc-1cfe-492e-adc6-b6a91b47a970.jpg"
+                     alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text" style="font-size: 7px">
+                        프렌치카페 로스터리 옐로우 버번 돌체 라떼, 250ml, 10개
+                    </p>
+                    <p class="card-text"><span style="color: brown">10120원</span>
+                        <br><span style="color: brown;font-size: 10px">(100ml당 405원)</span></p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top"
+                     src="https://thumbnail8.coupangcdn.com/thumbnails/remote/300x300ex/image/retail/images/532657834783962-6140c4cc-1cfe-492e-adc6-b6a91b47a970.jpg"
+                     alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text" style="font-size: 7px">
+                        프렌치카페 로스터리 옐로우 버번 돌체 라떼, 250ml, 10개
+                    </p>
+                    <p class="card-text"><span style="color: brown">10120원</span>
+                        <br><span style="color: brown;font-size: 10px">(100ml당 405원)</span></p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top"
+                     src="https://thumbnail8.coupangcdn.com/thumbnails/remote/300x300ex/image/retail/images/532657834783962-6140c4cc-1cfe-492e-adc6-b6a91b47a970.jpg"
+                     alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text" style="font-size: 7px">
+                        프렌치카페 로스터리 옐로우 버번 돌체 라떼, 250ml, 10개
+                    </p>
+                    <p class="card-text"><span style="color: brown">10120원</span>
+                        <br><span style="color: brown;font-size: 10px">(100ml당 405원)</span></p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top"
+                     src="https://thumbnail8.coupangcdn.com/thumbnails/remote/300x300ex/image/retail/images/532657834783962-6140c4cc-1cfe-492e-adc6-b6a91b47a970.jpg"
+                     alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text" style="font-size: 7px">
+                        프렌치카페 로스터리 옐로우 버번 돌체 라떼, 250ml, 10개
+                    </p>
+                    <p class="card-text"><span style="color: brown">10120원</span>
+                        <br><span style="color: brown;font-size: 10px">(100ml당 405원)</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
